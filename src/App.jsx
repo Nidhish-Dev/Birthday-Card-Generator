@@ -13,7 +13,7 @@ function App() {
   canvas.height = 850;
 
   const bgImage = new Image();
-  bgImage.src = '/bg.jpg';
+  bgImage.src = './bg.jpg';
   bgImage.onload = () => {
     ctx.drawImage(bgImage, 0, 0, canvas.width, canvas.height);
 
