@@ -1,0 +1,79 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../public/back.jpg');
+  background-size: cover;
+  /* Set background size to cover the entire container */
+  background-position: center;
+  /* Center the background image */
+  font-family: "Syne", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Apply backdrop filter for blur effect */
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  /* Ensure padding is included in the width */
+}
+
+h1 {
+  color: #333;
+}
+
+.name-input {
+  width: calc(100% - 22px);
+  /* Adjusted width to consider padding and border */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  word-wrap: break-word;
+}
+
+.generate-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-container {
+  margin-top: 20px;
+}
+
+.card-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.download-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    backdrop-filter: none; /* Remove blur effect on larger devices */
+  }
+}
